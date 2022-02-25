@@ -1,0 +1,77 @@
+# Configuration for Alacritty, the GPU enhanced terminal emulator.
+
+window:
+  padding:
+    x: 10
+    y: 10
+  opacity: 0.9
+
+  decorations: none
+
+scrolling:
+  history: 10000
+  multiplier: 3
+
+font:
+  normal:
+    family: FiraCode Nerd Font Mono
+    style: Regular
+
+  bold:
+    family: FiraCode Nerd Font Mono
+    style: Bold
+
+  italic:
+    family: FiraCode Nerd Font Mono
+    style: Italic
+
+  size: 11.0
+
+  offset:
+    x: 0
+    y: 0
+
+  glyph_offset:
+    x: 0
+    y: 0
+# Colors (Monokai Pro)
+colors:
+  # Default colors
+  primary:
+    background: '#2D2A2E'
+    foreground: '#FCFCFA'
+
+  # Normal colors
+  normal:
+    black: '#403E41'
+    red: '#FF6188'
+    green: '#A9DC76'
+    yellow: '#FFD866'
+    blue: '#FC9867'
+    magenta: '#AB9DF2'
+    cyan: '#78DCE8'
+    white: '#FCFCFA'
+
+  # Bright colors
+  bright:
+    black: '#727072'
+    red: '#FF6188'
+    green: '#A9DC76'
+    yellow: '#FFD866'
+    blue: '#FC9867'
+    magenta: '#AB9DF2'
+    cyan: '#78DCE8'
+    white: '#FCFCFA'
+
+live_config_reload: true
+cursor:
+  style: Block
+  unfocused_hollow: true
+
+shell:
+  program: /bin/zsh
+  args:
+    - --login
+    - -l
+    - -c
+    - 'tmux attach || tmux'
