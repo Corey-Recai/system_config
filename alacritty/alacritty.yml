@@ -18,11 +18,11 @@ font:
     style: Regular
 
   bold:
-    family: FiraCode Nerd Font Mono
+    family: FiraCode Nerd Font
     style: Bold
 
   italic:
-    family: FiraCode Nerd Font Mono
+    family: FiraCode Nerd Font
     style: Italic
 
   size: 11.0
